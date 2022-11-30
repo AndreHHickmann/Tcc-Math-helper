@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color:  #121214;
+    background-color:  rgb(180, 255, 255);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,11 +15,11 @@ body {
 }
 
 .container {
-    background-color: #343439;
+    background-color: #4d4d4d;
     padding: 30px 40px;
     min-width: 470px;
     color: #efefef;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.389);
+    box-shadow: 10px 10px 10px rgba(99, 99, 99, 0.389);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,9 @@ input:focus {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
+
 
 .menu {
     text-decoration: none;
@@ -72,4 +74,8 @@ input:focus {
 
 .menu:hover {
     color: rgb(14, 14, 14);
+}
+
+.botao:hover {
+    background-color: rgb(146, 80, 252);
 }

@@ -4,12 +4,18 @@ let erro = 0;
 let tentativas = 0;
 
 function numeroAleatorio() {
-    return Math.floor(Math.random() * (0 - 100 + 1)) + 100
+    return Math.floor(Math.random() * (0 - 500 + 1)) + 500
 }
+
+function numeroAleatorioDez(){  //numero aleatorio de 1 a 10
+    return Math.floor(Math.random() * 20 + 1)
+}
+
 let total = ''
 // gerando numero aleatorio nas variaiveis
     aleatorio1 = numeroAleatorio();
     aleatorio2 = numeroAleatorio();
+    aleatorio3 = numeroAleatorioDez();
 // gerando numero aleatorio nas variaiveis
 
 //dando get do valor do html
@@ -18,6 +24,17 @@ let total = ''
 
     let n2 = window.document.getElementById('num2')
     n2.innerText = aleatorio2
+
+    let n3 = window.document.getElementById('num3')
+    n3.innerText = aleatorio3
+
+    let p1 = window.document.getElementById('parenteses1')
+
+    let p2 = window.document.getElementById('parenteses2')
+    
+
+    let operador2 = window.document.getElementById('operador2')
+    operador2.innerText = 'X';
 //dando get do valor do html
     
 
@@ -36,8 +53,10 @@ let total = ''
 
    if (operadorAleatorio >= 50){
      total = aleatorio1+aleatorio2;
+     total = total * aleatorio3;
    } else if(operadorAleatorio < 50) {
     total = aleatorio1-aleatorio2;
+    total = total * aleatorio3;
    }
 
    
@@ -65,10 +84,14 @@ function botaoClick(){
     n1.innerText = ''
     n2.innerText = ''
     operador.innerText = 'Por favor clique em proximo'
-
+    operador2.innerText = ''
+    n3.innerText = ''
+    parenteses1.innerText = ''
+    parenteses2.innerText= ''
+  
     if (tentativas == 10) {
         if (acerto >=9 && erro <=1 ){
-            alert('Você obteve um frequência alta de acertos, recomendamos que suba o nivel !!')
+            alert('Você é muito bom em matemática, parabens !!!, em breve teremos mais niveis...')
         } 
     }
     
@@ -79,9 +102,11 @@ function botaoClick(){
 function botaoProx() {
     let prox1 = numeroAleatorio();
     let prox2 = numeroAleatorio();
+    let prox3 = numeroAleatorioDez();
 
     n1.innerText = prox1
     n2.innerText = prox2
+    n3.innerText = prox3
 //gerador de operador aleatorio
     let operadorAleatorio = numeroAleatorio();
     if (operadorAleatorio >= 50) {
@@ -94,7 +119,12 @@ function botaoProx() {
 //gerador de operador aleatorio    
    if (operadorAleatorio >= 50){
      total = prox1+prox2;
+     total = total * prox3;
    } else if(operadorAleatorio < 50) {
     total = prox1-prox2;
+    total = total * prox3;
    }
+   operador2.innerText = 'X'
+   parenteses1.innerText = '('
+   parenteses2.innerText= ')'
 }

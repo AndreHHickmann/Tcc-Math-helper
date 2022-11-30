@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dificuldade Medio</title>
+    <title>Dificuldade Médio</title>
+    <link rel="stylesheet" href="difiCss.css">
 </head>
 <body>
     
+    <div class="container">
+        <a href="/tcc/index.html" class="menu">Voltar para o menu</a>
+        <h2>Nivel Médio</h2>
+        <div class="valor">
+            <p id="parenteses1">(</p>
+            <p class="num1" id="num1">num1</p>
+            <p id="operador">operador</p>
+            <p class="num2" id="num2">num2</p>
+            <p id="parenteses2">)</p>
+            <p class="operador2" id="operador2">Operador2</p>
+            <p class="num3" id="num3">num3</p>
+        </div>
+        <label for="" id="resultado">Resultado</label>
+        <input type="number" id="inputt">
+        <button onclick="botaoClick()" class="botao">Confirmar</button>
+        <button onclick="botaoProx()" class="botao">Proximo</button>
+        <p id="acertos">Total de Acertos: 0</p>
+        <p id="erros">Total de Erros: 0</p>
+        <p id="tentativas">Total de Tentativas: 0</p>
+    </div>
+    <script src="medio.js"></script>
 </body>
 </html>
