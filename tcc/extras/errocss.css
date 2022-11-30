@@ -1,0 +1,130 @@
+/* manter a pagina sem scroll e circulo azul, cria div com classe extra no final do codigo*/
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.extra {
+    position: absolute;
+    bottom: -350px;
+    right: -450px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: rgb(180, 255, 255);
+}
+
+/* manter a pagina sem scroll e circulo azul, cria div com classe extra no final do codigo*/
+
+/* nav superior para voltar para o menu*/
+
+.menu {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 50%;
+    margin-top: 50px;
+    text-shadow: 1px 1px 1px rgb(129, 129, 129);
+}
+
+.menu:hover {
+    color: rgb(155, 154, 154);
+}
+
+/* nav superior para voltar para o menu*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 7%;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    margin-left: 7%;
+}
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid rgb(158, 158, 158);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, textarea:focus {
+    background: #bdbdbd;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #fff;
+    border: 0;
+    margin-bottom: 5em;
+    color: rgb(0, 0, 0);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 43%;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.botao:hover {
+    background: #aaaaaa;
+    box-shadow: insert 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.email, .sobrenome, .nome {
+    margin-bottom: 50px;
+}
+
+#h1-sobre  {
+    font-size: 60px;
+    margin-left: 10%;
+}
+
+#h2-sobre  {
+    font-size: 25px;
+}
+

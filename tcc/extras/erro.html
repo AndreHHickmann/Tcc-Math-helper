@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportar erros</title>
+    <link rel="stylesheet" href="errocss.css">
 </head>
 <body>
+    <a href="/tcc/index.html" class="menu">Voltar para o menu</a>
+    <div>
+        <h1 id="titulo">Reportar Erros</h1>
+        <p id="subtitulo">Complete as informações abaixo</p>
+        <br>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" >
+                <br> <br>
+            </div>
+
+            <div>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                <br> <br>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email">
+            <br> <br>
+        
+        </div>
+       <div class="campo">
+        <label>Descreva o erro ocorrido no campo abaixo</label>
+        <textarea name="erro" id="erro" cols="50" rows="5"></textarea>
+        <button class="botao" type="submit"><strong>Concluido</strong></button>
+       </div>
+       <div class="extra"></div>
+    </form>
     
 </body>
 </html>
