@@ -74,11 +74,15 @@ function botaoClick(){
         tentativas++
         acertosT.innerHTML = `Total de Acertos: ${acerto}`
         tentativasT.innerHTML = `Total de Tentativas: ${tentativas}`
+        entrada.value ='' //limpa o valor do input para se clicar 2x no mesmo calculo nao da certo
+    }   else if (entrada.value == ''){ //validador de entrada nao nula
+        operador.innerText ='Por favor digite um valor valido'
     } else {
         erro++
         tentativas++
         errosT.innerHTML = `Total de Erros: ${erro}`
         tentativasT.innerHTML = `Total de Tentativas: ${tentativas}`
+        entrada.value =''  //limpa o valor do input para se clicar 2x no mesmo calculo nao da certo
     }
 
     n1.innerText = ''
